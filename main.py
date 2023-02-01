@@ -4,7 +4,7 @@ import rectangle_test
 
 if __name__ == '__main__':
     rectangle = rectangle_measures.Rectangle(20, 10)
-    print(f" The dimensions of the rectangle are: {rectangle.retrieve_dimensions()}")
+    print(f"The dimensions of the rectangle are:\t {rectangle.retrieve_dimensions()}")
     rectangle.set_width(200)
     rectangle.set_height(100)
     print(f"The dimensions of the rectangle are: {rectangle.retrieve_dimensions()}")
