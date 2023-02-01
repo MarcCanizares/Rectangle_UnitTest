@@ -1,3 +1,5 @@
+import math
+
 class Rectangle:
     def __init__(self, width, height):
         self.width = width
@@ -8,6 +10,10 @@ class Rectangle:
 
     def get_perimeter(self):
         return 2 * (self.width + self.height)
+
+    def get_diagonal(self):
+        diagonal = round(math.sqrt((self.width ** 2) + (self.height ** 2)),2)
+        return diagonal
 
     def set_width(self, new_width):
         self.width = new_width
